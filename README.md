@@ -15,7 +15,7 @@ Aşağıdaki adımları izleyerek projeyi yerel ortamınıza klonlayabilir ve ç
 1. Bu projeyi yerel ortamınıza klonlayın:
 
    ```bash
-   https://github.com/murathanbakti/rast-mobile.git
+   git clone https://github.com/murathanbakti/rast-mobile.git
 
    ```
 
