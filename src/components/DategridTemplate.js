@@ -27,6 +27,15 @@ const DategridTemplate = () => {
     const newValue = e.value || 1;
     setRowNumber(newValue);
   }, []);
+  
+
+  const rowCount = 10; // Sabit satır sayısı
+
+  // Eksik satırları oluşturmak için boş veriler
+  while (parseData.length < rowCount) {
+    parseData.push({ id: null, name: null, value: null });
+  }
+
 
   return (
     <section className="data-grid-container">
