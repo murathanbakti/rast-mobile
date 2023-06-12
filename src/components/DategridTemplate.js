@@ -12,10 +12,12 @@ import { ReactComponent as PlusIcon } from "./assets/svg/plus-icon.svg";
 const getData = localStorage.getItem("user");
 const parseData = JSON.parse(getData);
 
+
+
 const DategridTemplate = () => {
   const [searchValue, setSearchValue] = useState("");
   const [addScreenOpen, setAddScreenOpen] = useState(false);
-  const [rowNumber, setRowNumber] = useState(9);
+  const [rowCount, setRow] = useState(9); // Satır Sayısı
 
   /* Yeni veri Ekleme ekranı açılma işlemi */
   const toggleAddScreen = useCallback(() => {
@@ -25,16 +27,15 @@ const DategridTemplate = () => {
   /* Satır Sayısını Belirleme */
   const handleRowNumber = useCallback((e) => {
     const newValue = e.value || 1;
-    setRowNumber(newValue);
+    setRow(newValue);
   }, []);
   
 
-  const rowCount = 10; // Sabit satır sayısı
 
-  // Eksik satırları oluşturmak için boş veriler
-  while (parseData.length < rowCount) {
-    parseData.push({ id: null, name: null, value: null });
-  }
+//   // Eksik satırları oluşturmak için boş veriler
+//   while (parseData.length < rowCount) {
+//     parseData.push({ id: null, name: null, value: null });
+//   }
 
 
   return (
@@ -73,7 +74,7 @@ const DategridTemplate = () => {
         dataSource={parseData}
         paging={{
           enabled: true,
-          pageSize: rowNumber,
+          pageSize: rowCount,
         }}
         searchPanel={{
           visible: false,
@@ -116,7 +117,7 @@ const DategridTemplate = () => {
       <div className="row-count-container">
         <span>Show:</span>
         <NumberBox
-          value={rowNumber}
+          value={rowCount}
           onValueChanged={handleRowNumber}
           format="# rows"
           min={1}
