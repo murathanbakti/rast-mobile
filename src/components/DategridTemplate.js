@@ -72,11 +72,11 @@ const DategridTemplate = () => {
           visible: false,
           text: searchValue,
         }}
+        columnAutoWidth={true}
       >
         <Column
           dataField="socialMediaLink"
           caption="Sosyal Medya Linki"
-          width={250}
           headerCellRender={({ column }) => (
             <div className="custom-header-cell">
               <span className="column-title">{column.caption}</span>
@@ -86,7 +86,6 @@ const DategridTemplate = () => {
         <Column
           dataField="socialMediaName"
           rowAlternationEnabled={true}
-          width={250}
           caption="Sosyal Medya Adı"
           headerCellRender={({ column }) => (
             <div className="custom-header-cell">

@@ -15,16 +15,16 @@ const Header = () => {
               <img src={require("./../assets/logo.png")} alt="hata" />
             </a>
           </li>
-          <li>
+          <li className="desktop">
             <a href="#">Hakkımızda</a>
           </li>
-          <li>
+          <li className="desktop">
             <a href="#">Juri- Yarışma Yazılımı</a>
           </li>
-          <li>
+          <li className="desktop">
             <a href="#">Word Ninja</a>
           </li>
-          <li>
+          <li className="desktop">
             <a href="#">Word Pyramids</a>
           </li>
           <li>

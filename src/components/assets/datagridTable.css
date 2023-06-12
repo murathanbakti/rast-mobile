@@ -198,11 +198,22 @@
   .search-filter-container input {
     width: 250px;
   }
-  .dx-datagrid {
+  .dx-datagrid,
+  .row-count-container {
     margin: 0 50px;
   }
 }
 @media only screen and (max-width: 768px) {
+  .data-grid-container{
+    margin: 0;
+  }
+  .table-header-settings {
+    margin: 11px 5px;
+  }
+  .dx-datagrid,
+  .row-count-container {
+    margin: 10px 5px;
+  }
 }
 @media only screen and (max-width: 576px) {
 }
