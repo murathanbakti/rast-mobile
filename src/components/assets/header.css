@@ -1,0 +1,61 @@
+.navbar-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 100px;
+}
+.navbar-logo{
+    width: 130px;
+    height: 37px;
+}
+.navbar-logo img{
+    width: 100%;
+}
+.navbar-list li a{
+    color: black;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    text-decoration: none;
+}
+.social-buttons{
+    display: flex;
+    gap: 10px;
+}
+/**
+*
+*   Responsive / Start
+*
+*/
+@media only screen and (max-width: 1400px)
+{
+}
+@media only screen and (max-width: 1200px)
+{
+}
+@media only screen and (max-width: 992px)
+{
+    .navbar-list li a{
+    font-size: 13px;
+    }
+    .navbar-list{
+    padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 768px)
+{
+    
+}
+@media only screen and (max-width: 576px)
+{
+}
+@media only screen and (min-width: 1400px)
+{
+}
+/**
+*
+*   Responsive / Finish
+*
+*/
