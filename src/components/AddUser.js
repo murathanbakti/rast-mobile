@@ -27,7 +27,7 @@ const AddUser = ({ onClose, exData }) => {
       localStorage.setItem("user", newData);
     }
   }, [exData, handledData]);
-
+console.log(exData);
   return (
     <section className="add-user-background">
       <div className="add-user-container">
