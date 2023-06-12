@@ -17,7 +17,7 @@ const parseData = JSON.parse(getData);
 const DategridTemplate = () => {
   const [searchValue, setSearchValue] = useState("");
   const [addScreenOpen, setAddScreenOpen] = useState(false);
-  const [rowCount, setRow] = useState(9); // Satır Sayısı
+  const [rowCount, setRowCount] = useState(9); // Satır Sayısı
 
   /* Yeni veri Ekleme ekranı açılma işlemi */
   const toggleAddScreen = useCallback(() => {
@@ -27,16 +27,8 @@ const DategridTemplate = () => {
   /* Satır Sayısını Belirleme */
   const handleRowNumber = useCallback((e) => {
     const newValue = e.value || 1;
-    setRow(newValue);
+    setRowCount(newValue);
   }, []);
-  
-
-
-//   // Eksik satırları oluşturmak için boş veriler
-//   while (parseData.length < rowCount) {
-//     parseData.push({ id: null, name: null, value: null });
-//   }
-
 
   return (
     <section className="data-grid-container">

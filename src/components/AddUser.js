@@ -42,6 +42,7 @@ const AddUser = ({ onClose, exData }) => {
               name="link"
               className="form-input"
               id="socialMediaLink"
+              required
               value={socialMediaLink}
               onChange={(e) => setSocialMediaLink(e.target.value)}
             />
@@ -53,6 +54,7 @@ const AddUser = ({ onClose, exData }) => {
               name="media-name"
               className="form-input"
               id="socialMediaName"
+              required
               value={socialMediaName}
               onChange={(e) => setSocialMediaName(e.target.value)}
             />
@@ -64,6 +66,7 @@ const AddUser = ({ onClose, exData }) => {
               name="desc"
               className="form-input"
               id="socialMediaDescription"
+              required
               value={socialMediaDescription}
               onChange={(e) => setSocialMediaDescription(e.target.value)}
             />
