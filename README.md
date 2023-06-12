@@ -31,6 +31,7 @@ Aşağıdaki adımları izleyerek projeyi yerel ortamınıza klonlayabilir ve ç
 
    ```bash
     npm start
+    
 5. Tarayıcınızda aşağıdaki URL'yi açın:
 
    ```bash
